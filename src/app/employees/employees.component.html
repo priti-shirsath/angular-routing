@@ -1,0 +1,11 @@
+<nav>
+<ul>
+    <li *ngFor="let employee of employees">
+      <a routerLink="employeedetail/{{employee.Id}}">
+        <span >{{employee.Id}}</span> {{employee.Name}}
+      </a>
+    </li>
+  </ul>
+  </nav>
+  <router-outlet></router-outlet>
+  

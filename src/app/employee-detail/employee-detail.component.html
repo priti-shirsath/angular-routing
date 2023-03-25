@@ -1,0 +1,9 @@
+<div *ngIf="employee">
+    <h2>{{employee.Name | uppercase}} Details</h2>
+    <div><span>EmployeeID: </span>{{employee.Id}}</div>
+    <div><span>EmployeeName: </span>{{employee.Name}}</div>
+    <div><span>EmployeeDepartment: </span>{{employee.DepartmentId}}</div>
+    <div><span>EmployeeSalary: </span>{{employee.Salary}}</div>
+    <button type="button" (click)="goBack()">go back</button>
+  </div>
+  
